@@ -4,9 +4,15 @@ import Banner from './component/LandingPage/Banner/Banner'
 
 function App() {
   const [count, setCount] = useState(0)
-
+  // Inline styles for the background image
+  const backgroundImageStyle = {
+    backgroundImage: "url('/images/bg-images.jpg')",
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundAttachment: 'fixed',
+  };
   return (
-    <div>
+    <div className='' style={backgroundImageStyle}>
      <Banner/>
     </div>
   )
