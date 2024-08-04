@@ -1,0 +1,25 @@
+/* VerticalMarquee.css */
+
+.marquee-container {
+    height: 200px; /* Adjust as needed */
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .marquee-content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    animation: scroll-down 10s linear infinite;
+  }
+  
+  @keyframes scroll-down {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(100%);
+    }
+  }
+  
