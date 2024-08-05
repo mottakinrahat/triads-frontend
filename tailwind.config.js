@@ -5,7 +5,24 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      container: {
+        center: true,
+        padding: "2rem",
+        screens: {
+          "2xl": "1440px",
+        },
+      },
+      keyframes: {
+        marquee: {
+          '0%': { transform: 'translateY(100%)' },
+          '100%': { transform: 'translateY(-100%)' },
+        },
+      },
+      animation: {
+        marquee: 'marquee 10s linear infinite',
+      },
+    },
   },
   plugins: [function({ addUtilities }) {
     addUtilities({
