@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       container: {
@@ -15,32 +12,45 @@ export default {
       },
       keyframes: {
         marquee: {
-          '0%': { transform: 'translateY(100%)' },
-          '100%': { transform: 'translateY(-100%)' },
+          "0%": { transform: "translateY(100%)" },
+          "100%": { transform: "translateY(-100%)" },
         },
         scaleUpDown: {
-          '0%': { transform: 'scale(0.9)' },
-          '100%': { transform: 'scale(1)' }
-        }
+          "0%": { transform: "scale(0.9)" },
+          "100%": { transform: "scale(1)" },
+        },
+        fadeEffect: {
+          "0%": { opacity: "0.2" },
+          "100%": { opacity: "1" },
+        },
       },
       animation: {
-        marquee: 'marquee 1s linear infinite',
-        scaleUpDown: 'scaleUpDown 3s alternate-reverse infinite',
+        marquee: "marquee 1s linear infinite",
+        scaleUpDown: "scaleUpDown 3s alternate-reverse infinite",
+        fadeEffect: "fadeEffect 3s ease infinite running ",
+      },
+
+      colors: {
+        "primary-color": "#fd0101",
       },
     },
   },
-  plugins: [function({ addUtilities }) {
-    addUtilities({
-      '.text-shadow': {
-        textShadow: '2px 2px 4px rgba(0, 0, 0, 0.7)',
-      },
-      '.text-shadow-sm': {
-        textShadow: '1px 1px 2px rgba(0, 0, 0, 0.5)',
-      },
-      '.text-shadow-lg': {
-        textShadow: '4px 4px 6px rgba(0, 0, 0, 0.8)',
-      },
-    }, ['responsive', 'hover']);
-  },],
-}
-
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities(
+        {
+          ".text-shadow": {
+            textShadow: "2px 2px 4px rgba(0, 0, 0, 0.7)",
+          },
+          ".text-shadow-sm": {
+            textShadow: "1px 1px 2px rgba(0, 0, 0, 0.5)",
+          },
+          ".text-shadow-lg": {
+            textShadow: "4px 4px 6px rgba(0, 0, 0, 0.8)",
+          },
+        },
+        ["responsive", "hover"]
+      );
+    },
+  ],
+};
