@@ -11,13 +11,17 @@ export default {
         },
       },
       keyframes: {
-        marquee: {
-          "0%": { transform: "translateY(100%)" },
-          "100%": { transform: "translateY(-100%)" },
+        // marquee: {
+        //   "0%": { transform: "translateY(100%)" },
+        //   "100%": { transform: "translateY(-100%)" },
+        // },
+        "vertical-scroll": {
+          "0%": { transform: "translateY(0)" },
+          "100%": { transform: "translateY(-50%)" },
         },
         scaleUpDown: {
-          "0%": { transform: "scale(0.9)" },
-          "100%": { transform: "scale(1)" },
+          "0%": { transform: "scale(1.1)" },
+          "100%": { transform: "scale(1.2)" },
         },
         fadeEffect: {
           "0%": { opacity: "0.2" },
@@ -25,7 +29,7 @@ export default {
         },
       },
       animation: {
-        marquee: "marquee 1s linear infinite",
+        "vertical-scroll": "vertical-scroll 30s linear infinite",
         scaleUpDown: "scaleUpDown 3s alternate-reverse infinite",
         fadeEffect: "fadeEffect 3s ease infinite running ",
       },

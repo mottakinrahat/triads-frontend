@@ -3,6 +3,7 @@ import ReuseMarquee from "../../ReusableMarquee/ReuseMarquee";
 import { FaTelegram, FaTwitter } from "react-icons/fa";
 import { AiFillMuted } from "react-icons/ai";
 import { IoVolumeHighSharp } from "react-icons/io5";
+import VerticalMarquee from "../../ReusableMarquee/VerticalMarquee";
 
 const Banner = () => {
   const audioRef = useRef(null);
@@ -51,19 +52,32 @@ const Banner = () => {
   return (
     <div className="relative overflow-hidden">
       {/* Transparent overlay */}
-      <div className="absolute inset-0 bg-[#4B0200] bg-opacity-60 z-10"></div>
 
-      <div className="relative z-[300] col-span-8">
-        <ReuseMarquee
-          gradient={true}
-          speed={120}
-          className="bg-[#4B0200] bg-shadow shadow-3xl text-8xl font-bold text-[#CC1414] w-full min-h-[130px] flex items-center"
-        >
-          三合會正向你襲來 你無法逃脫 你無法隱藏 唯一的選擇就是加入
-          三合會正向你襲來 你無法逃脫 你無法隱藏 唯一的選擇就是加入
-        </ReuseMarquee>
+      <ReuseMarquee
+        gradient={true}
+        speed={120}
+        className="bg-[#4B0200] absolute top-0 left-0 flex bg-shadow shadow-3xl text-8xl font-bold text-[#CC1414] w-full min-h-[130px]  items-center z-[400]"
+      >
+        三合會正向你襲來 你無法逃脫 你無法隱藏 唯一的選擇就是加入
+        三合會正向你襲來 你無法逃脫 你無法隱藏 唯一的選擇就是加入
+      </ReuseMarquee>
+      <ReuseMarquee
+        gradient={true}
+        speed={120}
+        className="bg-[#4B0200] flex absolute bottom-0 left-0 bg-shadow shadow-3xl text-8xl font-bold text-[#CC1414] w-full h-[140px]  items-center z-[400]"
+        direction="right"
+      >
+        三合會正向你襲來 你無法逃脫 你無法隱藏 唯一的選擇就是加入
+        三合會正向你襲來 你無法逃脫 你無法隱藏 唯一的選擇就是加入
+      </ReuseMarquee>
 
-        <div className="pt-20 container z-[200]">
+      <div className="relative h-full px-10  z-[300] grid grid-cols-12 ">
+        <div className="h-full col-span-2">
+          <VerticalMarquee />
+        </div>
+
+        {/* Main content */}
+        <div className="pb-32 pt-60 col-span-8 h-full container z-[200]">
           <div className="relative">
             <div className="flex flex-col z-[300] relative justify-center items-center">
               <img
@@ -149,7 +163,7 @@ const Banner = () => {
                   alt=""
                 />
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center">
-                  <p className="text-2xl font-bold text-center break-words">
+                  <p className="text-2xl font-bold text-center break-words font-serif">
                     D8sU6N62WpYS6Aby11kg4BLuJrdyWtUEhuFWf97R7Tw2
                   </p>
                 </div>
@@ -161,7 +175,7 @@ const Banner = () => {
               </div>
             </div>
 
-            <div className="absolute top-1/2 -translate-x-1/2 -translate-y-1/2 z-[100] left-1/2">
+            <div className="absolute top-[40%] -translate-x-1/2 -translate-y-1/2 z-[100] left-1/2">
               <img
                 className="animate-scaleUpDown"
                 src="/images/_symbol-f3ddca6a.png"
@@ -179,72 +193,9 @@ const Banner = () => {
             </a>
           </div>
         </div>
-
-        <ReuseMarquee
-          gradient={true}
-          speed={120}
-          className="bg-[#4B0200] bg-shadow shadow-3xl text-8xl font-bold text-[#CC1414] w-full h-[140px] flex items-center z-[300]"
-          direction="right"
-        >
-          三合會正向你襲來 你無法逃脫 你無法隱藏 唯一的選擇就是加入
-          三合會正向你襲來 你無法逃脫 你無法隱藏 唯一的選擇就是加入
-        </ReuseMarquee>
-      </div>
-      <div className="absolute top-0 left-[60px] max-w-[12%] w-full z-[200]">
-        <div className="absolute z-20 w-full h-full animate-marquee">
-          <div className="w-full space-y-4">
-            {Array(33)
-              .fill()
-              .map((_, index) => (
-                <img
-                  key={index}
-                  className="w-full h-auto object-contain animate-marquee"
-                  src="/images/striaosLogo.png"
-                  alt=""
-                />
-              ))}
-          </div>
-          <div className="w-full space-y-4">
-            {Array(33)
-              .fill()
-              .map((_, index) => (
-                <img
-                  key={index}
-                  className="w-full h-auto object-contain"
-                  src="/images/striaosLogo.png"
-                  alt=""
-                />
-              ))}
-          </div>
-        </div>
-      </div>
-
-      <div className="absolute top-0 right-[60px] max-w-[12%] w-full z-[200]">
-        <div className="absolute z-20 w-full h-full animate-marquee">
-          <div className="w-full space-y-4">
-            {Array(33)
-              .fill()
-              .map((_, index) => (
-                <img
-                  key={index}
-                  className="w-full h-auto object-contain animate-marquee"
-                  src="/images/striaosLogo.png"
-                  alt=""
-                />
-              ))}
-          </div>
-          <div className="w-full space-y-4">
-            {Array(33)
-              .fill()
-              .map((_, index) => (
-                <img
-                  key={index}
-                  className="w-full h-auto object-contain"
-                  src="/images/striaosLogo.png"
-                  alt=""
-                />
-              ))}
-          </div>
+        {/* Vertical Scroll bar right */}
+        <div className="h-full col-span-2">
+          <VerticalMarquee />
         </div>
       </div>
     </div>

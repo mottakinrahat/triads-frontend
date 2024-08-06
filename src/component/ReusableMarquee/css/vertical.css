@@ -1,25 +1,29 @@
-/* VerticalMarquee.css */
-
 .marquee-container {
-    height: 200px; /* Adjust as needed */
-    overflow: hidden;
-    position: relative;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.marquee-content {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  animation: marquee 20s linear infinite;
+}
+
+.marquee-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateY(0);
   }
-  
-  .marquee-content {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 0;
-    animation: scroll-down 10s linear infinite;
+  100% {
+    transform: translateY(-100%);
   }
-  
-  @keyframes scroll-down {
-    from {
-      transform: translateY(-100%);
-    }
-    to {
-      transform: translateY(100%);
-    }
-  }
-  
+}
