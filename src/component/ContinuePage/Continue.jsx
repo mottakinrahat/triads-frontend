@@ -1,7 +1,7 @@
 import "./continue.css";
-const Continue = () => {
+const Continue = ({setShowContinue, setShowVideo}) => {
   return (
-    <div className="max-w-[100vw] w-full h-screen overflow-x-hidden relative">
+    <div onClick={() => {setShowContinue(false); setShowVideo(true)}} className="max-w-[100vw] w-full h-screen overflow-x-hidden relative">
       <div
         style={{
           backgroundImage: `url('https://triads.io/assets/_ticker-800fbd73.png')`,
