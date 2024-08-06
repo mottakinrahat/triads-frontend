@@ -6,6 +6,7 @@ import Continue from "./component/ContinuePage/Continue";
 import ChapterSection from "./component/LandingPage/ChapterSection/ChapterSection";
 import GallerySection from "./component/LandingPage/GallerySection/GallerySection";
 import Section4 from "./component/LandingPage/Section4/Section4";
+import Section5 from "./component/LandingPage/Section5/Section5";
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -24,6 +25,7 @@ function App() {
       <ChapterSection />
       <GallerySection/>
       <Section4/>
+      <Section5/>
     </div>
   );
 }
