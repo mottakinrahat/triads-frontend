@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "Teroxia";
+    src: url("/public/Teroxia.otf");
+}
+
+body{
+    font-family: "Teroxia", sans-serif;
+}
