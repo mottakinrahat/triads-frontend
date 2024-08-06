@@ -5,10 +5,10 @@ const ChapterSection = () => {
   return (
     <div className="bg-[url('/public/images/bg-images.jpg')] bg-contain bg-fixed bg-center max-w-[100vw] overflow-x-hidden">
       <div className="bg-green-900 bg-opacity-70 relative">
-        <div className="min-h-[90vh] lg:max-w-[90%] mx-auto flex items-center">
+        <div className="min-h-[90vh] lg:max-w-[90%] mx-auto flex flex-col lg:flex-row items-center">
           <div className=" h-full w-full">
-            <div className="flex flex-col items-center">
-              <div className="w-[60%] mx-auto  ">
+            <div className="flex flex-col items-center py-10">
+              <div className="lg:w-[90%] mx-auto px-5">
                 <video
                   controls
                   autoPlay
@@ -22,18 +22,20 @@ const ChapterSection = () => {
                   <p>Sorry! Your browser does not support HTML5 videos.</p>
                 </video>
               </div>
+              <a href="#gallery">
               <button className="bg-red-600 mt-5 text-4xl font-bold rounded-xl hover:bg-gray-200 duration-300">
                 <h2 className="bg-red-950 p-3 px-5 text-red-700 mx-5 my-1 hover:text-white duration-300">
                   Gallery
                 </h2>
               </button>
+              </a>
             </div>
           </div>
           <div className="h-full w-full">
             <div>
               <TextSlider />
             </div>
-            <div className="flex items-center w-[80%] mx-auto mt-12">
+            <div className="flex items-center w-[80%] mx-auto mt-5 lg:mt-12 mb-10">
               <img
                 className="opacity-60 w-1/2"
                 src="../../../../public/images/el_2-30b04fbe.png"

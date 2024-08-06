@@ -17,7 +17,7 @@ const Banner = () => {
       <div>
         <div>
           <img
-            className="max-w-[600px]"
+            className="lg:max-w-[600px] max-w-[90vw] mx-auto"
             src="/images/upBarWithText.png"
             alt=""
           />
