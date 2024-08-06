@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import ReuseMarquee from "../../ReusableMarquee/ReuseMarquee";
 import { FaTelegram, FaTwitter } from "react-icons/fa";
 import { AiFillMuted } from "react-icons/ai";
