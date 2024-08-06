@@ -53,10 +53,10 @@ const TextSlider = () => {
   return (
     <div className="flex flex-col items-center mt-10">
       <div className="w-full p-4 rounded-md">
-        <h2 className="text-4xl md:text-5xl lg:text-7xl mb-4 text-shadow-lg text-red-500 font-bold text-center">
+        <h2 className="text-4xl md:text-5xl lg:text-6xl mb-4 text-shadow-lg text-red-500 font-bold text-center">
           {slidesData[currentSlide].title}
         </h2>
-        <p className="text-gray-200 text-center text-2xl">
+        <p className="text-gray-200 text-center text-xl lg:text-2xl">
           {slidesData[currentSlide].description}
         </p>
       </div>
