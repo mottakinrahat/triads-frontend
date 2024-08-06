@@ -1,21 +1,18 @@
-import { useState } from 'react'
-import './App.css'
-import Banner from './component/LandingPage/Banner/Banner'
+import { useState } from "react";
+import "./App.css";
+import Banner from "./component/LandingPage/Banner/Banner";
 
 function App() {
-  const [count, setCount] = useState(0)
-  // Inline styles for the background image
-  const backgroundImageStyle = {
-    backgroundImage: "url('/images/bg-images.jpg')",
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    backgroundAttachment: 'fixed',
-  };
   return (
-    <div className='' style={backgroundImageStyle}>
-     <Banner/>
+    <div className="relative ">
+      <div className="hero-background"></div>
+      <Banner />
+      <video autoPlay muted loop className="background-video">
+        <source src="/hero-section-video.mp4" />
+        Your browser does not support the video tag.
+      </video>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
