@@ -18,9 +18,14 @@ export default {
           '0%': { transform: 'translateY(100%)' },
           '100%': { transform: 'translateY(-100%)' },
         },
+        scaleUpDown: {
+          '0%': { transform: 'scale(0.9)' },
+          '100%': { transform: 'scale(1)' }
+        }
       },
       animation: {
-        marquee: 'marquee 10s linear infinite',
+        marquee: 'marquee 1s linear infinite',
+        scaleUpDown: 'scaleUpDown 3s alternate-reverse infinite',
       },
     },
   },
