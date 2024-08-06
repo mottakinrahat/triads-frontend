@@ -3,7 +3,7 @@ import ReuseMarquee from "../../ReusableMarquee/ReuseMarquee";
 const GallerySection = () => {
   return (
     <div id="gallery">
-      <ReuseMarquee className={"max-h-[80px] overflow-hidden"}>
+      <ReuseMarquee className={"max-h-[80px] overflow-hidden border-y-4 border-red-700"}>
         <img
           className="object-fill h-[80px]"
           src="/public/images/divider_-d86f4e6d.png"
@@ -51,7 +51,7 @@ const GallerySection = () => {
         />
       </ReuseMarquee>
 
-      <div className="py-5 border-y-4 border-red-700 bg-[url('/')] bg-red-800">
+      <div className="py-5 bg-[url('/')] bg-red-800">
         <div>
           <img
             className="max-w-[80vw] md:max-w-[60vw] lg:max-w-[600px] mx-auto "
@@ -118,7 +118,7 @@ const GallerySection = () => {
         </div>
       </div>
       <ReuseMarquee
-        className={"max-h-[100px] overflow-hidden"}
+        className={"max-h-[100px] overflow-hidden border-y-4 border-red-700"}
         direction={"right"}
       >
         <img
