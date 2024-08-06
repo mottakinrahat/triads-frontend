@@ -1,7 +1,7 @@
 import "./continue.css";
 const Continue = () => {
   return (
-    <div className="w-[100vw] h-screen overflow-x-hidden relative">
+    <div className="max-w-[100vw] w-full h-screen overflow-x-hidden relative">
       <div
         style={{
           backgroundImage: `url('https://triads.io/assets/_ticker-800fbd73.png')`,
