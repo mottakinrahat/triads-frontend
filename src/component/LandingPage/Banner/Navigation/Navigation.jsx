@@ -9,8 +9,8 @@ const Navigation = () => {
   const [isAudioOn, setIsAudioOn] = useState(true);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   return (
-    <div className="w-full">
-      <div className=" lg:hidden w-full border-2 border-[#d70202] p-5 px-8 rounded-full bg-[#680000] flex items-center justify-between">
+    <div className="w-[60%] absolute top-40 left-[50%] -translate-x-[50%] z-50">
+      <div className=" lg:hidden w-full border-2 border-[#d70202] p-3 sm:p-5 px-4 sm:px-8 rounded-full bg-[#680000] flex items-center justify-between">
         <div>
           <HiOutlineMenu onClick={() => setDropdownOpen(!dropdownOpen)} className="text-[#d70202] text-3xl cursor-pointer" />
         </div>

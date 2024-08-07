@@ -77,6 +77,8 @@ const Banner = () => {
           <VerticalMarquee />
         </div>
 
+        <Navigation />
+
         {/* Main content */}
         <div className="pb-32 pt-60 col-span-8 h-full container z-[200]">
           <div className="relative">
