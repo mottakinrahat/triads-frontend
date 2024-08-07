@@ -3,7 +3,8 @@ import Cursor from "./component/Cursor/Cursor";
 import Banner from "./component/LandingPage/Banner/Banner";
 import ChapterSection from "./component/LandingPage/ChapterSection/ChapterSection";
 import GallerySection from "./component/LandingPage/GallerySection/GallerySection";
-import VerticalMarquee from "./component/ReusableMarquee/VerticalMarquee";
+import Section4 from "./component/LandingPage/Section4/Section4";
+import Section5 from "./component/LandingPage/Section5/Section5";
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
         <ChapterSection/>
       </div>
       <GallerySection/>
+      <Section4/>
+      <Section5/>
     </div>
   );
 }

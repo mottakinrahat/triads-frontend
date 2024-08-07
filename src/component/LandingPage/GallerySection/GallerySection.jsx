@@ -51,7 +51,7 @@ const GallerySection = () => {
         />
       </ReuseMarquee>
 
-      <div className="py-5 bg-[url('/public/images/gallery-bg.png')] bg-contain bg-repeat-x bg-no-repeat ">
+      <div className="py-5 bg-[url('/public/images/gallery-bg.png')] bg-contain bg-repeat-x">
         <div>
           <img
             className="max-w-[80vw] md:max-w-[60vw] lg:max-w-[600px] mx-auto "
@@ -67,10 +67,10 @@ const GallerySection = () => {
               loop
               playsInline
               poster
-              className="w-full h-full rounded-xl border-[6px] border-red-950 shadow-xl"
+              className="w-full h-full rounded-xl shadow-2xl"
             >
               <source
-                src="https://api.flydex.io/media_data/triads_vid.mp4"
+                src="/public/triads_vid.mp4"
                 type="video/mp4"
               />
               <p>Sorry! Your browser does not support HTML5 videos.</p>
@@ -83,10 +83,10 @@ const GallerySection = () => {
               loop
               playsInline
               poster
-              className="w-full h-full rounded-xl border-[6px] border-red-950 shadow-xl"
+              className="w-full h-full rounded-xl shadow-2xl"
             >
               <source
-                src="https://api.flydex.io/media_data/triads_vid.mp4"
+                src="/public/t_vid_2_compressed-c77853cb.mp4"
                 type="video/mp4"
               />
               <p>Sorry! Your browser does not support HTML5 videos.</p>
@@ -99,10 +99,10 @@ const GallerySection = () => {
               loop
               playsInline
               poster
-              className="w-full h-full rounded-xl border-[6px] border-red-950 shadow-xl"
+              className="w-full h-full rounded-xl shadow-2xl"
             >
               <source
-                src="https://api.flydex.io/media_data/triads_vid.mp4"
+                src="/public/t_vid_3_compressed_resized-9a4c835e.mp4"
                 type="video/mp4"
               />
               <p>Sorry! Your browser does not support HTML5 videos.</p>

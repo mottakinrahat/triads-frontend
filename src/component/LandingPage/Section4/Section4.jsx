@@ -2,8 +2,8 @@ import ReuseMarquee from "../../ReusableMarquee/ReuseMarquee";
 
 const Section4 = () => {
   return (
-    <div>
-      <div className="py-6 bg-red-800">
+    <div className=" bg-[url('/public/images/gallery-bg.png')] bg-contain bg-repeat-x">
+      <div className="bg-red-900 py-6 bg-opacity-50">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-2 px-5 md:px-8 lg:px-0 lg:max-w-[1300px] mx-auto">
             {/* col 1  */}
           <div className="flex flex-col items-center gap-2">

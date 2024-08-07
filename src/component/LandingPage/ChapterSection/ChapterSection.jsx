@@ -1,5 +1,4 @@
 import ReuseMarquee from "../../ReusableMarquee/ReuseMarquee";
-import VerticalMarquee from "../../ReusableMarquee/VerticalMarquee";
 import TextSlider from "./TextSlider";
 
 const ChapterSection = () => {
@@ -25,9 +24,8 @@ const ChapterSection = () => {
               <div className="lg:w-[90%] mx-auto px-5">
                 <video
                   controls
-                  autoPlay
                   loop
-                  className="w-full h-full rounded-xl border-[6px] border-red-950"
+                  className="w-full h-full rounded-xl border-[3px] border-red-950"
                 >
                   <source
                     src="https://api.flydex.io/media_data/triads_vid.mp4"
