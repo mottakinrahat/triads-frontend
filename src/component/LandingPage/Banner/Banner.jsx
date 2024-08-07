@@ -85,7 +85,7 @@ const Banner = () => {
         <Navigation />
 
         {/* Main content */}
-        <div className="lg:pb-32 pt-44 col-span-10 xl:col-span-8 h-full container z-[200]">
+        <div className="lg:pb-32 pt-44 col-span-10 xl:col-span-8 h-full container z-[200] mt-10 sm:mt-20 lg:mt-0">
           <div className="relative">
             <div className="flex flex-col z-[300] relative justify-center items-center">
               <img
@@ -94,7 +94,7 @@ const Banner = () => {
                 alt=""
               />
 
-              <div className="mt-8 mb-5 space-y-3">
+              <div className="mt-8 mb-5 space-y-3 hidden lg:block">
                 <ul className="items-center flex flex-wrap gap-8 justify-center">
                   <li className="flex items-center gap-2">
                     <a
