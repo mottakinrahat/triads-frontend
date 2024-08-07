@@ -6,7 +6,7 @@ const ReuseMarquee = ({ text, direction, className, speed, children }) => {
       <Marquee
         direction={direction}
         speed={speed}
-        className="h-full text-center overflow-y-hidden"
+        className="h-full  text-center overflow-y-hidden"
       >
         {children}
       </Marquee>

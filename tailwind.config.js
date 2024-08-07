@@ -27,11 +27,23 @@ export default {
           "0%": { opacity: "0.2" },
           "100%": { opacity: "1" },
         },
+        "dargon-fade": {
+          "0%": { opacity: "0.2" },
+          "100%": { opacity: ".8" },
+        },
+        wiggle: {
+          "0%, 100%": { transform: "rotate(0deg)" },
+          "25%": { transform: "rotate(5deg)" },
+          "50%": { transform: "rotate(-5deg)" },
+          "75%": { transform: "rotate(5deg)" },
+        },
       },
       animation: {
         "vertical-scroll": "vertical-scroll 30s linear infinite",
         scaleUpDown: "scaleUpDown 3s alternate-reverse infinite",
         fadeEffect: "fadeEffect 3s ease infinite running ",
+        "dargon-fade": "dargon-fade 3s ease infinite running ",
+        wiggle: "wiggle 1s infinite ease-in-out",
       },
 
       colors: {

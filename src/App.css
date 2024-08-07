@@ -1,36 +1,56 @@
 @font-face {
-    font-family: "Teroxia";
-    src: url("/public/Teroxia.otf");
+  font-family: "Teroxia";
+  src: url("/public/Teroxia.otf");
 }
 
-body{
-    font-family: "Teroxia", sans-serif;
+body {
+  font-family: "Teroxia", sans-serif;
+}
+
+.break-all {
+  word-break: break-all;
 }
 
 .hero-background {
-    background-image: url("/images/bg-images.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 100%;
-    width: 100%;
-    background-position: center center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0.1;
-    z-index: 2;
-  }
-  
-  .background-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -2;
-  }
-  
-  
- 
+  background-image: url("/images/bg-images.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+  background-position: center center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.1;
+  z-index: 2;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.copy-text-filed {
+  color: #000;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  padding: 3rem 9rem;
+  font-family: inherit;
+  text-align: center;
+  -webkit-user-select: text !important;
+  user-select: text !important;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.75rem;
+  filter: saturate(150%);
+  text-transform: uppercase;
+}
