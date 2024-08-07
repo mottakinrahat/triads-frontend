@@ -4,6 +4,7 @@ import { FaTelegram, FaTwitter } from "react-icons/fa";
 import { AiFillMuted } from "react-icons/ai";
 import { IoVolumeHighSharp } from "react-icons/io5";
 import VerticalMarquee from "../../ReusableMarquee/VerticalMarquee";
+import Navigation from "./Navigation/Navigation";
 
 const Banner = () => {
   const audioRef = useRef(null);
@@ -85,6 +86,7 @@ const Banner = () => {
                 src="/images/upBarWithText.png"
                 alt=""
               />
+
               <div className="mt-8 mb-5 space-y-3">
                 <ul className="items-center flex flex-wrap gap-8 justify-center">
                   <li className="flex items-center gap-2">
