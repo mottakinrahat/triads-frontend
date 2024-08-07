@@ -82,7 +82,7 @@ const Banner = () => {
         </div>
 
         {/* Main content */}
-        <div className="lg:pb-32 pt-44 col-span-10 xl:col-span-8 h-full container z-[200]">
+        <div className="lg:pb-32 pt-32 md:pt-44 col-span-10 xl:col-span-8 h-full container z-[200]">
           <div className="relative">
             <div className="flex flex-col z-[300] relative justify-center items-center">
               <img
@@ -209,9 +209,12 @@ const Banner = () => {
           <VerticalMarquee />
         </div>
 
-        <div className="h-[500px] relative px-5 md:hidden">
-          <VerticalMarquee margqueNumber={100} />
-          <img src="/images" alt="" />
+        <div className="h-[400px] w-full relative px-5 md:hidden">
+          <VerticalMarquee margqueNumber={30} />
+
+          <div className="absolute size-full top-0 left-0 flex items-center justify-center w-full ">
+            <img className="w-[150px] sm:w-[200px] animate-wiggle" src="/images/dragon.png" alt="dragon" />
+          </div>
         </div>
       </div>
     </div>
