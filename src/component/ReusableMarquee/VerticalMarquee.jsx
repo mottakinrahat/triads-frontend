@@ -1,7 +1,7 @@
 // VerticalMarquee.js
 import "./css/vertical.css";
 
-const VerticalMarquee = ({margqueNumber = 300}) => {
+const VerticalMarquee = ({ margqueNumber = 300 }) => {
   const images = Array(margqueNumber).fill("/images/striaosLogo.png");
 
   return (
@@ -9,7 +9,12 @@ const VerticalMarquee = ({margqueNumber = 300}) => {
       <div className="absolute w-full animate-vertical-scroll">
         <div className="flex flex-col space-y-4">
           {images.map((item, idx) => (
-            <img key={idx} src={item} alt={`item ${idx + 1}`} />
+            <img
+              className="w-full"
+              key={idx}
+              src={item}
+              alt={`item ${idx + 1}`}
+            />
           ))}
         </div>
       </div>

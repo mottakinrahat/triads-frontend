@@ -4,6 +4,7 @@ import { FaTelegram, FaTwitter } from "react-icons/fa";
 import { AiFillMuted } from "react-icons/ai";
 import { IoVolumeHighSharp } from "react-icons/io5";
 import VerticalMarquee from "../../ReusableMarquee/VerticalMarquee";
+import Navigation from "../../navigation/Navigation";
 
 const Banner = () => {
   const audioRef = useRef(null);
@@ -81,8 +82,10 @@ const Banner = () => {
           <VerticalMarquee />
         </div>
 
+        <Navigation />
+
         {/* Main content */}
-        <div className="lg:pb-32 pt-32 md:pt-44 col-span-10 xl:col-span-8 h-full container z-[200]">
+        <div className="lg:pb-32 pt-64 lg:pt-44 col-span-10 xl:col-span-8 h-full container z-[200]">
           <div className="relative">
             <div className="flex flex-col z-[300] relative justify-center items-center">
               <img
@@ -90,15 +93,18 @@ const Banner = () => {
                 src="/images/upBarWithText.png"
                 alt=""
               />
-              <div className="md:mt-8 mb-5 space-y-3">
-                <ul className="items-center hidden md:flex flex-wrap gap-4 sm:gap-8 text-xl sm:text-2xl lg:text-4xl justify-center">
+
+              <div className="mt-8 mb-5 space-y-3 hidden lg:block">
+                <ul className="items-center flex flex-wrap gap-8 justify-center">
                   <li className="flex items-center gap-2">
                     <a
                       href="#"
                       className="text-primary-color hover:text-white  font-bold flex items-center gap-2 uppercase"
                     >
-                      <FaTelegram />{" "}
-                      <span className="text-shadow">Telegram</span>
+                      <FaTelegram className="text-3xl" />{" "}
+                      <span className="text-shadow sm:text-2xl lg:text-4xl">
+                        Telegram
+                      </span>
                     </a>
                   </li>
                   <li className="flex items-center gap-2">
@@ -106,7 +112,10 @@ const Banner = () => {
                       href="#"
                       className="text-primary-color hover:text-white  font-bold flex items-center gap-2 uppercase"
                     >
-                      <FaTwitter /> <span className="text-shadow">Twitter</span>
+                      <FaTwitter className="text-3xl" />{" "}
+                      <span className="text-shadow sm:text-2xl lg:text-4xl">
+                        Twitter
+                      </span>
                     </a>
                   </li>
                 </ul>
@@ -213,7 +222,11 @@ const Banner = () => {
           <VerticalMarquee margqueNumber={30} />
 
           <div className="absolute size-full top-0 left-0 flex items-center justify-center w-full ">
-            <img className="w-[150px] sm:w-[200px] animate-wiggle" src="/images/dragon.png" alt="dragon" />
+            <img
+              className="w-[150px] sm:w-[200px] animate-wiggle"
+              src="/images/dragon.png"
+              alt="dragon"
+            />
           </div>
         </div>
       </div>
