@@ -51,7 +51,7 @@ const GallerySection = () => {
         />
       </ReuseMarquee>
 
-      <div className="py-5 bg-[url('/')] bg-red-800">
+      <div className="py-5 bg-[url('/public/images/gallery-bg.png')] bg-contain bg-repeat-x bg-no-repeat ">
         <div>
           <img
             className="max-w-[80vw] md:max-w-[60vw] lg:max-w-[600px] mx-auto "

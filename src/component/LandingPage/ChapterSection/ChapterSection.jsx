@@ -1,11 +1,25 @@
 import ReuseMarquee from "../../ReusableMarquee/ReuseMarquee";
+import VerticalMarquee from "../../ReusableMarquee/VerticalMarquee";
 import TextSlider from "./TextSlider";
 
 const ChapterSection = () => {
   return (
-    <div className="bg-[url('/public/images/bg-images.jpg')] bg-contain bg-fixed bg-center max-w-[100vw] overflow-x-hidden">
-      <div className="bg-green-900 bg-opacity-70 relative">
-        <div className="min-h-[90vh] lg:max-w-[90%] mx-auto flex flex-col lg:flex-row items-center">
+    <div className=" overflow-x-hidden relative">
+      <div className="bg-[url('/public/images/bg-images.jpg')] bg-contain bg-fixed bg-center w-full h-full absolute opacity-60">
+        <div className="absolute bg-green-600 w-full h-full bg-opacity-60"></div>
+      </div>
+      <video
+        autoPlay
+        muted
+        loop
+        className="background-video absolute w-full h-full z-10 opacity-60"
+      >
+        <source src="/public/chapter-background-video.mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div className="relative z-20 bg-[#4a1010] bg-opacity-60">
+        <div className="min-h-[100vh] lg:max-w-[90%] mx-auto flex flex-col lg:flex-row items-center">
+          {/* left section */}
           <div className=" h-full w-full">
             <div className="flex flex-col items-center py-10">
               <div className="lg:w-[90%] mx-auto px-5">
@@ -23,11 +37,11 @@ const ChapterSection = () => {
                 </video>
               </div>
               <a href="#gallery">
-              <button className="bg-red-600 mt-5 text-4xl font-bold rounded-xl hover:bg-gray-200 duration-300">
-                <h2 className="bg-red-950 p-3 px-5 text-red-700 mx-5 my-1 hover:text-white duration-300">
-                  Gallery
-                </h2>
-              </button>
+                <button className="bg-red-600 mt-5 text-4xl font-bold rounded-xl hover:bg-gray-200 duration-300">
+                  <h2 className="bg-red-950 p-3 px-5 text-red-700 mx-5 my-1 hover:text-white duration-300">
+                    Gallery
+                  </h2>
+                </button>
               </a>
             </div>
           </div>
