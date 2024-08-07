@@ -152,7 +152,7 @@ const Banner = () => {
               </div>
 
               <img
-                className=" animate-fadeEffect w-full h-full"
+                className=" animate-fadeEffect xl:w-[80%] w-full h-full"
                 src="/images/striaosLogo.png"
                 alt=""
               />
