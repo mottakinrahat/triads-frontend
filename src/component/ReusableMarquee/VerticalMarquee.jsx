@@ -1,8 +1,8 @@
 // VerticalMarquee.js
 import "./css/vertical.css";
 
-const VerticalMarquee = () => {
-  const images = Array(300).fill("/images/striaosLogo.png");
+const VerticalMarquee = ({margqueNumber = 300}) => {
+  const images = Array(margqueNumber).fill("/images/striaosLogo.png");
 
   return (
     <div className="relative h-full overflow-hidden">
