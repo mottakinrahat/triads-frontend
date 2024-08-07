@@ -2,10 +2,10 @@ import ReuseMarquee from "../../ReusableMarquee/ReuseMarquee";
 
 const Section4 = () => {
   return (
-    <div>
-      <div className="py-6 bg-red-800">
+    <div className=" bg-[url('/images/section-4-bg.png')] bg-cover bg-no-repeat">
+      <div className="bg-primary-color py-6 bg-opacity-20">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-2 px-5 md:px-8 lg:px-0 lg:max-w-[1300px] mx-auto">
-            {/* col 1  */}
+          {/* col 1  */}
           <div className="flex flex-col items-center gap-2">
             <div className="overflow-hidden w-full">
               <img
@@ -29,7 +29,7 @@ const Section4 = () => {
               />
             </div>
           </div>
-            {/* col 2  */}
+          {/* col 2  */}
           <div className="flex flex-col items-center gap-2">
             <div className="overflow-hidden w-full">
               <img
@@ -46,7 +46,7 @@ const Section4 = () => {
               />
             </div>
           </div>
-            {/* col 3  */}
+          {/* col 3  */}
           <div className="flex flex-col items-center gap-2">
             <div className="overflow-hidden w-full">
               <img

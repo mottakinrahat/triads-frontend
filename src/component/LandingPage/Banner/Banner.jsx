@@ -9,6 +9,17 @@ import Navigation from "../../navigation/Navigation";
 const Banner = () => {
   const audioRef = useRef(null);
   const [isMuted, setIsMuted] = useState(false);
+  const [text, setText] = useState(
+    "D8sU6N62WpYS6Aby11kg4BLuJrdyWtUEhuFWf97R7Tw2"
+  );
+
+  const handleCopy = () => {
+    // Copy the text to the clipboard
+    navigator.clipboard
+      .writeText(text)
+      .then(() => {})
+      .catch((err) => {});
+  };
 
   useEffect(() => {
     const audio = audioRef.current;
@@ -175,16 +186,19 @@ const Banner = () => {
                 style={{ backgroundImage: `url("/images/bottomButton.png")` }}
               >
                 <p className="text-lg font-bold text-center  break-all font-serif">
-                  D8sU6N62WpYS6Aby11kg4BLuJrdyWtUEhuFWf97R7Tw2
+                  {text}
                 </p>
               </div>
               <div className="p-5 md:hidden block bg-primary-color rounded-full mb-5 mt-6">
                 <p className="sm:text-base text-sm font-bold text-center  break-all font-serif">
-                  D8sU6N62WpYS6Aby11kg4BLuJrdyWtUEhuFWf97R7Tw2
+                  {text}
                 </p>
               </div>
               <div className="flex items-center justify-center">
-                <button className="py-1 px-8 active:bg-black active:border-black active:text-white border rounded-2xl text-lg font-bold border-[#880b16] bg-[#880b16]">
+                <button
+                  onClick={handleCopy}
+                  className="py-1 px-8 active:bg-black active:border-black active:text-white border rounded-2xl text-lg font-bold border-[#880b16] bg-[#880b16]"
+                >
                   Copy
                 </button>
               </div>
